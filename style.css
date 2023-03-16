@@ -37,6 +37,9 @@ background-color: #fff;
     box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
     box-sizing: border-box;
     text-align: center;
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
 }
 .formCard h1 {
     font-size: 30px;
@@ -46,13 +49,20 @@ background-color: #fff;
     margin-bottom: 10px;
     line-height: 38px;
 }
-img{
-    height: 30vh;
-    width: 40vw;
-    position: absolute;
-    margin-bottom: 65vh;
-    z-index: -1;
+.imgDiv{
+    margin-bottom: 0 auto;
 }
+img{
+    max-height: 250px;
+    max-width: 250px;
+    padding: 15px;
+}
+.bg {
+    position: absolute;
+    z-index: -2;
+  }
+  
+
 .formCard h2 {
     font-size: 14px;
     font-weight: 400;
@@ -66,31 +76,49 @@ img{
     display: flex;
     
 }
-input{
-    position: relative;
-    padding-right: 20vw;
-    padding-bottom: 1.5vh;
-}
+.inputs input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  a{
+    color: rgb(121, 166, 250);
+    text-decoration: underline;
+    font-weight: 550;
+    cursor: pointer;
+  }
 
 label.placeholder,
 p2 {
     color: #82888c;
     font-size: 13.33px;
-    left: 12px;
-    top: 17px;
     font-family: Montserrat !important;
+}
+p2{
+    margin-top: 20px;
 }
 .getStarted{
     padding: 1vw;
-    width: 30vw;
-    margin-bottom: 1vh;
-    margin-top: 2vh;
+    width: 90%;
+    background-color: #2b2b2b;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: ease-in;
+    border-radius: 5px;
 }
+
 .getStartedDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 2.5vh;
+}
+.getStarted:hover{
+    background-color: #353e47;
 }
 
 .orSeparator {
@@ -99,3 +127,5 @@ p2 {
     flex-grow: 1;
     margin-top: 12px;
 }
+
+

@@ -15,6 +15,11 @@ body{
 button{
 background-color: #fff;
 }
+.logoGoogle{
+    padding: 5px;
+    height: 15px;
+    width: 15px;
+}
 
 .google {
     border-radius: 4px;
@@ -28,6 +33,10 @@ background-color: #fff;
     cursor: pointer;
     transition: all 0.1s ease-in-out;
     box-sizing: border-box;
+}
+.google:hover{
+    background-color: #2b2b2b;
+    color: #fff;
 }
 .formCard {
     margin: 0 auto;
